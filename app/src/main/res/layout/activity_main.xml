@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/sueldoBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sueldo base"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/diasTrabajos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dias Trabajados"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcularSueldoMensual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CalcularSueldoPorDias"
+        android:text="Calcular Sueldo Mensual" />
+
+    <TextView
+        android:id="@+id/sueldoMensual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sueldo Mensual" />
+
+    <EditText
+        android:id="@+id/bonos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bonos"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcularLiquidacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CalcularSueldoImponible"
+        android:text="Calcular Liquidacion" />
+
+    <EditText
+        android:id="@+id/sueldoImponible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:ems="10"
+        android:hint="Sueldo Imponible"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/AFP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="13% AFP"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/salud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="7% Salud"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/totalDescuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Total Descuento"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/totalPagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Total a Pagar"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="LimpiaFormulario"
+        android:text="Reset" />
+
+</LinearLayout>
